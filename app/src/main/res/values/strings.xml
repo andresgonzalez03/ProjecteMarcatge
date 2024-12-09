@@ -14,4 +14,9 @@
         <item>DAW</item>
         <item>ASIX</item>
     </string-array>
+
+    <string-array name="roles_array">
+        <item>Alumne</item>
+        <item>Professor</item>
+    </string-array>
 </resources>

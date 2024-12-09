@@ -25,14 +25,15 @@
         <EditText
             android:id="@+id/fecha"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
+            android:background="@drawable/input_background"
             android:hint="Selecciona el dia"
             android:inputType="date" />
 
         <Spinner
             android:id="@+id/asignatura"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:entries="@array/asignaturas">
             <!-- Opciones de asignaturas -->
         </Spinner>
@@ -40,7 +41,7 @@
         <Spinner
             android:id="@+id/grupo"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:entries="@array/grupos">
             <!-- Opciones de grupos -->
         </Spinner>
