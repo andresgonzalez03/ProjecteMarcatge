@@ -35,7 +35,6 @@ public class AdminActivity extends AppCompatActivity {
 
         users = new ArrayList<>();
 
-        // Configurar el Spinner de roles
         ArrayAdapter<CharSequence> roleAdapter = ArrayAdapter.createFromResource(
                 this,
                 R.array.roles_array,
@@ -80,12 +79,10 @@ public class AdminActivity extends AppCompatActivity {
         userAdapter.notifyDataSetChanged();
         Toast.makeText(this, "Usuario agregado correctamente.", Toast.LENGTH_SHORT).show();
 
-        // Limpiar los campos de entrada
         userNameInput.setText("");
         passwordInput.setText("");
         roleSpinner.setSelection(0);
     }
-
     private void removeUser() {
         int selectedPosition = userSpinner.getSelectedItemPosition();
         if (selectedPosition >= 0) {

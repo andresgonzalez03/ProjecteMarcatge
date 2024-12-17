@@ -86,7 +86,6 @@ public class AlumneActivity extends AppCompatActivity {
     private void cargarDatosAsistencia(String nombreAlumno, String fecha) {
         resultTable.removeAllViews();
 
-        // Crear la fila de encabezado
         TableRow headerRow = new TableRow(this);
         agregarCelda(headerRow, "Nom", true);
         agregarCelda(headerRow, "Assignatura", true);
