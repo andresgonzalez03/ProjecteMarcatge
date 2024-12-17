@@ -208,7 +208,7 @@ public class ProfessorActivity extends AppCompatActivity {
         }
 
         if (entries.isEmpty()) {
-            Toast.makeText(this, "No hay registros para mostrar", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "No n'hi ha registres per mostrar", Toast.LENGTH_SHORT).show();
             return;
         }
 

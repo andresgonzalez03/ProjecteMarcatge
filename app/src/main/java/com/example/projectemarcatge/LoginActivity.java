@@ -48,7 +48,7 @@ public class LoginActivity extends AppCompatActivity {
         tvForgotPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(LoginActivity.this, "Funcionalidad no implementada", Toast.LENGTH_SHORT).show();
+                Toast.makeText(LoginActivity.this, "Funcionalitat no implementada", Toast.LENGTH_SHORT).show();
             }
         });
     }

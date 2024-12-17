@@ -72,12 +72,12 @@ public class AdminActivity extends AppCompatActivity {
         String role = roleSpinner.getSelectedItem().toString();
 
         if (userName.isEmpty() || password.isEmpty()) {
-            Toast.makeText(this, "Por favor, completa todos los campos.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Si us plau, completa tots els camps.", Toast.LENGTH_SHORT).show();
             return;
         }
         users.add(userName + " (" + role + ")");
         userAdapter.notifyDataSetChanged();
-        Toast.makeText(this, "Usuario agregado correctamente.", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Usuari afegit correctament.", Toast.LENGTH_SHORT).show();
 
         userNameInput.setText("");
         passwordInput.setText("");
@@ -88,9 +88,9 @@ public class AdminActivity extends AppCompatActivity {
         if (selectedPosition >= 0) {
             String removedUser = users.remove(selectedPosition);
             userAdapter.notifyDataSetChanged();
-            Toast.makeText(this, "Usuario eliminado: " + removedUser, Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Usuari eliminat: " + removedUser, Toast.LENGTH_SHORT).show();
         } else {
-            Toast.makeText(this, "Por favor, selecciona un usuario para eliminar.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Si us plau, sel·lecciona un usuari per esborrar.", Toast.LENGTH_SHORT).show();
         }
     }
 }
