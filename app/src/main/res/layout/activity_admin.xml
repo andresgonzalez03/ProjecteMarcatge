@@ -4,10 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f4f7fa"
+    android:background="@color/app_background"
     tools:context=".AdminActivity">
 
-    <!-- Header -->
     <TextView
         android:id="@+id/headerTitle"
         android:layout_width="wrap_content"
@@ -21,7 +20,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="32dp" />
 
-    <!-- Formulario de agregar usuarios -->
     <androidx.cardview.widget.CardView
         android:id="@+id/containerAfegir"
         android:layout_width="0dp"
@@ -86,7 +84,6 @@
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
-    <!-- Selección de usuarios -->
     <androidx.cardview.widget.CardView
         android:id="@+id/containerEliminar"
         android:layout_width="0dp"

@@ -62,7 +62,7 @@ public class AdminActivity extends AppCompatActivity {
             }
         });
         passarLlista.setOnClickListener(view -> {
-            Intent intent = new Intent(this, AdminProfessorActivity.class);
+            Intent intent = new Intent(this, ProfessorActivity.class);
             startActivity(intent);
         });
     }

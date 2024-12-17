@@ -1,18 +1,21 @@
 <resources>
     <string name="app_name">ProjecteMarcatge</string>
 
-    <!-- Opciones de asignaturas -->
     <string-array name="asignaturas">
         <item>M6</item>
         <item>M7</item>
         <item>M8</item>
+        <item>M12</item>
+        <item>M9</item>
     </string-array>
 
-    <!-- Opciones de grupos -->
     <string-array name="grupos">
-        <item>DAM</item>
-        <item>DAW</item>
-        <item>ASIX</item>
+        <item>DAM 2A</item>
+        <item>DAW 2A</item>
+        <item>ASIX 2A</item>
+        <item>DAM 2B</item>
+        <item>DAW 2B</item>
+        <item>ASIX 2B</item>
     </string-array>
 
     <string-array name="roles_array">

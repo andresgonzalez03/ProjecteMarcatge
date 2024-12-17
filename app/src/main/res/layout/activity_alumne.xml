@@ -1,27 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:cardview="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f4f7fa">
+    android:background="@color/app_background">
 
-    <!-- Título de la página -->
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="30dp"
         android:text="Consultar la teva assistencia"
         android:textColor="#333"
         android:textSize="28sp"
         android:textStyle="bold"
+        android:layout_marginTop="250dp"
+        app:layout_constraintBottom_toTopOf="@id/formContainer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- CardView contenedor del formulario -->
     <androidx.cardview.widget.CardView
         android:id="@+id/formContainer"
         android:layout_width="match_parent"
@@ -36,32 +34,31 @@
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="30dp">
 
-        <!-- Contenido del formulario -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="20dp">
 
-            <!-- Input de ID Alumno -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:text="El teu ID:"
+                android:text="Nom de l'alumne:"
                 android:textColor="#555"
                 android:textSize="16sp" />
 
             <EditText
-                android:id="@+id/etIdAlumno"
+                android:id="@+id/etNombreAlumno"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
+                android:hint="Introduce el nombre del alumno"
                 android:background="@drawable/input_background"
                 android:padding="12dp"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:inputType="text"/>
 
-            <!-- Input de Fecha -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -76,10 +73,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/input_background"
+                android:hint="Selecciona la fecha"
+                android:focusable="false"
+                android:clickable="true"
                 android:padding="12dp"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:drawableEnd="@drawable/ic_calendar"/>
 
-            <!-- Botón Consultar -->
             <Button
                 android:id="@+id/consultarBtn"
                 android:layout_width="200dp"
@@ -94,7 +94,6 @@
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
-    <!-- CardView para mostrar los resultados -->
     <androidx.cardview.widget.CardView
         android:id="@+id/resultContainer"
         android:layout_width="match_parent"
@@ -107,14 +106,12 @@
         android:layout_marginTop="20dp"
         android:visibility="gone">
 
-        <!-- Contenido de los resultados -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="20dp">
 
-            <!-- Tabla de resultados -->
             <TableLayout
                 android:id="@+id/resultTable"
                 android:layout_width="match_parent"
@@ -143,9 +140,9 @@
             </TableLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
-    <!-- Contenedor de Error -->
+
     <TextView
-        app:layout_constraintBottom_toTopOf="@id/formContainer"
+        app:layout_constraintTop_toBottomOf="@id/formContainer"
         android:id="@+id/error"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -155,5 +152,4 @@
         android:text="No se encontraron resultados para este alumno en esa fecha."
         android:textColor="#dc3545"
         android:visibility="gone" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

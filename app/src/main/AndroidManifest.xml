@@ -22,9 +22,6 @@
             android:name=".ProfessorActivity"
             android:exported="false" />
         <activity
-            android:name=".AdminProfessorActivity"
-            android:exported="false" />
-        <activity
             android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
