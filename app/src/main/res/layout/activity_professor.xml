@@ -43,7 +43,8 @@
                     android:layout_height="48dp"
                     android:background="@drawable/input_background"
                     android:focusable="false"
-                    android:hint="Sel·ecciona el dia"
+                    android:drawableEnd="@drawable/ic_calendar"
+                    android:hint="Sel·lecciona el dia"
                     android:inputType="date" />
 
                 <Spinner
