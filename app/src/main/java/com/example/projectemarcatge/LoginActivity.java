@@ -52,6 +52,12 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        etUsername.setText("");
+        etPassword.setText("");
+    }
     private boolean isValidUser(String username, String password) {
         for (String[] user : users) {
             if (user[0].equals(username) && user[1].equals(password)) {
@@ -85,6 +91,5 @@ public class LoginActivity extends AppCompatActivity {
                 break;
         }
         startActivity(intent);
-        finish();
     }
 }
